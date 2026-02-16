@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Lumina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Lumina<span>.</span></a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="authors.html">Authors</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn search-toggle" aria-label="Search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <button class="btn btn-primary subscribe-btn">Subscribe</button>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background-color: var(--color-bg-secondary); padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem;">Get in Touch</h1>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">We'd love to hear from you.
+                Whether you have a question about features, trials, pricing, or anything else.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <div class="container main-layout">
+        <main class="content-area">
+            <div class="contact-form-container"
+                style="background: white; border: 1px solid var(--color-border); padding: 2.5rem; border-radius: 8px;">
+                <h2 style="font-family: var(--font-heading); margin-bottom: 1.5rem;">Send us a message</h2>
+                <form>
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+                            <input type="text" placeholder="Your name"
+                                style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+                        </div>
+                        <div class="form-group">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+                            <input type="email" placeholder="Your email"
+                                style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Subject</label>
+                        <input type="text" placeholder="Topic of discussion"
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
+                    </div>
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                        <textarea rows="6" placeholder="How can we help?"
+                            style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px; font-family: inherit;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="widget-title">Contact Info</h3>
+                <ul style="line-height: 2;">
+                    <li><i class="fa-solid fa-map-marker-alt" style="width: 25px; color: var(--color-accent);"></i> 123
+                        Review Street, Cityville</li>
+                    <li><i class="fa-solid fa-envelope" style="width: 25px; color: var(--color-accent);"></i>
+                        hello@lumina-blog.com</li>
+                    <li><i class="fa-solid fa-phone" style="width: 25px; color: var(--color-accent);"></i> +1 (555)
+                        123-4567</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>Lumina.</h4>
+                <p>Illuminating the stories that matter.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="authors.html">Authors</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lumina Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

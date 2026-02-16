@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | Lumina</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Lumina<span>.</span></a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="authors.html">Authors</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn search-toggle" aria-label="Search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <button class="btn btn-primary subscribe-btn">Subscribe</button>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background-color: var(--color-bg-secondary); padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem;">Browse by Category</h1>
+            <p style="color: var(--color-text-muted); max-width: 600px; margin: 0 auto;">Explore our curated collections
+                of stories, interviews, and insights across various disciplines.</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <div class="container" style="padding-top: 3rem; padding-bottom: 2rem;">
+        <div class="filter-controls" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="tech">Technology</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+        </div>
+    </div>
+
+    <!-- Main Content Layout -->
+    <div class="container" style="padding-bottom: 5rem;">
+
+        <div class="articles-grid" id="articles-grid">
+            <!-- Content will be filtered by JS -->
+
+            <article class="blog-card" data-category="design">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Design">
+                    <span class="card-category">Design</span>
+                </div>
+                <div class="card-content">
+                    <h3><a href="article.html">Minimalism in the Workplace</a></h3>
+                    <p class="excerpt">How office design affects productivity and mental clarity.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="tech">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Tech">
+                    <span class="card-category">Tech</span>
+                </div>
+                <div class="card-content">
+                    <h3><a href="article.html">The Next Era of AI</a></h3>
+                    <p class="excerpt">Beyond chat bots: generative agents and creative partners.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 7 min read</span>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="travel">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Travel">
+                    <span class="card-category">Travel</span>
+                </div>
+                <div class="card-content">
+                    <h3><a href="article.html">Patagonia's Hidden Trails</a></h3>
+                    <p class="excerpt">A guide to the less traveled paths of South America.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 9 min read</span>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="culture">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Culture">
+                    <span class="card-category">Culture</span>
+                </div>
+                <div class="card-content">
+                    <h3><a href="article.html">The Art of Slow Living</a></h3>
+                    <p class="excerpt">Embracing a slower pace in a high-speed world.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 6 min read</span>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="design">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Typography">
+                    <span class="card-category">Design</span>
+                </div>
+                <div class="card-content">
+                    <h3><a href="article.html">Typography Trends 2024</a></h3>
+                    <p class="excerpt">Serifs are back, and they are bolder than ever.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="tech">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Cybersecurity">
+                    <span class="card-category">Tech</span>
+                </div>
+                <div class="card-content">
+                    <h3><a href="article.html">Data Privacy Paradox</a></h3>
+                    <p class="excerpt">We say we care about privacy, but our actions say otherwise.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                        <a href="article.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>Lumina.</h4>
+                <p>Illuminating the stories that matter.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="authors.html">Authors</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lumina Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

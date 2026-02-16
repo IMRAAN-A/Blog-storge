@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Modern Perspectives</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Lumina<span>.</span></a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="authors.html">Authors</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn search-toggle" aria-label="Search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <button class="btn btn-primary subscribe-btn">Subscribe</button>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="category-tag">Featured Design</span>
+                <h1 class="hero-title"><a href="article.html">The Future of Minimalist Architecture in Urban Living</a></h1>
+                <div class="meta-data">
+                    <span class="author"><img src="https://ui-avatars.com/api/?name=Sarah+J&background=random" alt="Sarah Jenkins"> Sarah Jenkins</span>
+                    <span class="date">Oct 24, 2023</span>
+                    <span class="read-time">6 min read</span>
+                </div>
+                <p class="hero-excerpt">Exploring how sustainable materials and negative space are redefining modern city skylines and residential interiors.</p>
+                <a href="article.html" class="btn btn-outline-light">Read Article</a>
+            </div>
+        </div>
+        <div class="hero-image-overlay"></div>
+    </section>
+
+    <!-- Main Content Layout -->
+    <div class="container main-layout">
+        
+        <!-- Articles Grid -->
+        <main class="content-area">
+            <div class="section-header">
+                <h2>Latest Stories</h2>
+                <a href="archive.html" class="view-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Article Card 1 -->
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Office Space">
+                        <span class="card-category">Productivity</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="article.html">Reclaiming Deep Work in a Distracted World</a></h3>
+                        <p class="excerpt">Techniques to restore focus and creativity amidst the noise of constant notifications.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+                            <a href="article.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article Card 2 -->
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Analytics">
+                        <span class="card-category">Tech</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="article.html">The Ethics of AI in Creative Industries</a></h3>
+                        <p class="excerpt">Navigating the gray areas of copyright, inspiration, and machine generation.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
+                            <a href="article.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article Card 3 -->
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nature">
+                        <span class="card-category">Travel</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="article.html">Off the Grid: A Journey Through Patagonia</a></h3>
+                        <p class="excerpt">A photographic diary of wind-swept plains and towering granite peaks.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-clock"></i> 12 min read</span>
+                            <a href="article.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article Card 4 -->
+                <article class="blog-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Teamwork">
+                        <span class="card-category">Culture</span>
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="article.html">Remote Leadership: Building Trust Across Borders</a></h3>
+                        <p class="excerpt">Strategies for managing diverse teams without a shared physical office.</p>
+                        <div class="card-meta">
+                            <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                            <a href="article.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Sticky Sidebar -->
+        <aside class="sidebar stuck">
+            <!-- About Widget -->
+            <div class="widget about-widget">
+                <h3 class="widget-title">Editor's Note</h3>
+                <p>Welcome to <strong>Lumina</strong>. We curate stories for the modern creative, focusing on design, technology, and intentional living.</p>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="widget categories-widget">
+                <h3 class="widget-title">Trending Topics</h3>
+                <ul>
+                    <li><a href="categories.html">Technology <span>(14)</span></a></li>
+                    <li><a href="categories.html">Design <span>(8)</span></a></li>
+                    <li><a href="categories.html">Culture <span>(5)</span></a></li>
+                    <li><a href="categories.html">Travel <span>(3)</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Widget -->
+            <div class="widget newsletter-widget">
+                <h3 class="widget-title">Weekly Digest</h3>
+                <p>Get the best stories delivered to your inbox every Friday.</p>
+                <form class="sidebar-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-full">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h4>Lumina.</h4>
+                <p>Illuminating the stories that matter.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="authors.html">Authors</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lumina Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
